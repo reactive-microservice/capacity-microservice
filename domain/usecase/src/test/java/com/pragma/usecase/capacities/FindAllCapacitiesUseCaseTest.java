@@ -22,13 +22,6 @@ import static org.mockito.BDDMockito.given;
 @ExtendWith(MockitoExtension.class)
 class FindAllCapacitiesUseCaseTest {
 
-//    private Sort defaultSort;
-//
-//    @BeforeEach
-//    void setUp() {
-//        defaultSort = Sort.by(Sort.Direction.ASC, "name");
-//    }
-
     @InjectMocks
     private FindAllCapacitiesUseCase findAllCapacitiesUseCase;
 
