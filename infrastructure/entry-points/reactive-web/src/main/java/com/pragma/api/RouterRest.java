@@ -16,6 +16,7 @@ public class RouterRest {
     public RouterFunction<ServerResponse> routerFunction(Handler handler) {
 
         return route(GET("/api/capacity/{page}/{size}/{asc}/{orderByTechSize}"), handler::listenGETFindAllCapacitiesUseCase)
-                .andRoute(POST("/api/capacity"), handler::listenPOSTSaveCapacityUseCase);
+                .andRoute(POST("/api/capacity"), handler::listenPOSTSaveCapacityUseCase)
+                .andRoute(GET("/api/capacity/{id}"), handler::listenGETFindCapacityByIdUseCase);
     }
 }
